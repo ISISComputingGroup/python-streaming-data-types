@@ -27,6 +27,7 @@ setup(
     license="BSD 2-Clause License",
     packages=find_packages(exclude=["tests", "tests.*"]),
     python_requires=">=3.6.0",
+    build_requires=["flatbuffers", "numpy"],
     install_requires=["flatbuffers", "numpy"],
     extras_require={"dev": ["flake8", "pre-commit", "pytest", "tox"]},
 )
